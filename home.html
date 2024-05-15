@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/home.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">AishaMeera</div>
+        <nav>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="Notes.html">Notes</a></li>
+            <li><a href="song.html">Song 4 u</a></li>
+            <li><a href="#">Bonus</a></li>
+          </ul>
+        </nav>
+        <img src="images/menu.png" alt="" class="menu-icon" />
+      </div>
+      <div class="row">
+        <div class="col">
+          <h1>Art</h1>
+          <p>
+            Do you believe in modern art? Because together, we could create
+            something truly unique,
+            <br />
+            Just like the Mona Lisa, your beauty is captivating and mysterious
+          </p>
+          <button type="button" id="cuteButton">You're cute</button>
+        </div>
+        <div class="col">
+          <div class="card card1">
+            <h5>Thanks</h5>
+            <p>My first gift from u and I love it THANKS 🫣</p>
+          </div>
+          <div class="card card2">
+            <h5>Why u so adorable?!?</h5>
+            <p class="white">even though you get angry like a lion 🦁🦁🦁</p>
+          </div>
+          <div class="card card4">
+            <h5>Scaryyyy</h5>
+            <p class="white">but still gorgeouss 😵‍💫😵‍💫</p>
+          </div>
+          <div class="card card3">
+            <h5 class="gray">your favorite drawing</h5>
+            <p class="gray">Beautiful just like U HEHE🫣🫣</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const button = document.getElementById("cuteButton");
+
+      button.addEventListener("mouseover", function () {
+        button.textContent = "♥You're cute♥";
+        button.classList.add("red-text");
+        button.classList.add("pink-background");
+      });
+
+      button.addEventListener("mouseout", function () {
+        button.textContent = "Point here";
+        button.classList.remove("red-text");
+        button.classList.remove("pink-background");
+      });
+    });
+  </script>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <title>Romantic Design with Music</title>
+    <style></style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"><span>♥</span>AishaMeera<span>♥</span></a>
+
+      <nav class="navbar">
+        <a href="home.html">Home</a>
+        <a href="Notes.html">Notes</a>
+        <a href="song.html">Song 4 u</a>
+        <a href="#">Bonus</a>
+      </nav>
+      <img src="images/menu.png" alt="" />
+    </header>
+
+    <div class="container">
+      <h1>For</h1>
+      <h1>AISHA MEERA</h1>
+      <p>Dear Aisha Meera, this song is for you..</p>
+      <p>This is one of my favorite songs :D</p>
+
+      <!-- Penambahan elemen audio -->
+      <audio id="myAudio" preload="auto" loop>
+        <source src="4u.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+
+      <button onclick="togglePlayPause()" class="play-pause-button">
+        Play / Pause Music
+      </button>
+    </div>
+
+    <div class="footer">
+      Made with <span style="color: #ff6b6b">&hearts;</span> by Sultan
+    </div>
+
+    <script>
+      var audio = document.getElementById("myAudio");
+
+      function togglePlayPause() {
+        if (audio.paused) {
+          audio.play();
+        } else {
+          audio.pause();
+        }
+      }
+    </script>
+  </body>
+</html>
